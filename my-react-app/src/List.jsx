@@ -16,8 +16,8 @@ function List(props) {
 
     return (
         <>
-            <h3>{category}</h3>
-            <ul>{listItems}</ul>
+            <h3 className="list-category">{category}</h3>
+            <ul className="list-items">{listItems}</ul>
         </>
     );
 }
