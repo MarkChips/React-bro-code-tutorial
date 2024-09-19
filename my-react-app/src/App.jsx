@@ -27,8 +27,10 @@ function App() {
     <>
       <UserGreeting isLoggedIn={true} />
       <Header />
-      <List items={fruits} category='Fruits' />
-      <List items={vegetables} category='Vegetables' />
+      {/* ternary conditional */}
+      {fruits.length > 0 ? <List items={fruits} category='Fruits' /> : null}
+      {/* shorthand conditional */}
+      {vegetables.length > 0 && <List items={vegetables} category='Vegetables' />}
       <Card />
       <Student name="Spongebob" age={30} isStudent={true} />
       <Student name="Patrick" age={42} isStudent={false} />
