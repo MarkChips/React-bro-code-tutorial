@@ -24,7 +24,7 @@ function Counter() {
             <button className="counter-button" onClick={reset}>Reset</button>
             <button className="counter-button" onClick={increment}>Increment</button>
         </div>
-    )
+    );
 }
 
 export default Counter;
