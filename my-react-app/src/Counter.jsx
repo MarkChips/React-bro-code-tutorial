@@ -5,12 +5,21 @@ function Counter() {
 
     const [count, setCount] = useState(0);
 
+    /**
+     * Takes the PENDING state to calculate NEXT state.
+     * React puts your updater function in a queue (waiting in line).
+     * During the next render, it will call them in the same order.
+     */
     const increment = () => {
-        setCount(count + 1);
+        setCount(prevCount => prevCount + 1);
+        setCount(c => c + 1);
+        setCount(c => c + 1);
     }
 
     const decrement = () => {
-        setCount(count - 1);
+        setCount(c => c - 1);
+        setCount(c => c - 1);
+        setCount(c => c - 1);
     }
 
     const reset = () => {
