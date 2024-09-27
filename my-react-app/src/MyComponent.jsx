@@ -10,6 +10,18 @@ function MyComponent() {
     const [age, setAge] = useState(0);
     const [isEmployed, setIsEmployed] = useState(false);
     const [car, setCar] = useState({ year: 2007, make: 'Mini', model: 'One' });
+    const [foods, setFoods] = useState(['Apple', 'Orange', 'Banana']);
+
+    function handleAddFood() {
+        const newFood = document.getElementById('foodInput').value;
+        document.getElementById('foodInput').value = "";
+
+        setFoods(f => [...f, newFood]);
+    }
+
+    function handleRemoveFood(index) {
+        setFoods(foods.filter((_, i) => i !== index));
+    }
 
     function handleNameChange(event) {
         setName(event.target.value);
@@ -44,7 +56,7 @@ function MyComponent() {
     }
 
     function handleYearChange(event) {
-        setCar(car => ({ ...car, year: event.target.value }));
+        setCar(c => ({ ...c, year: event.target.value }));
     }
 
     function handleMakeChange(event) {
@@ -57,6 +69,13 @@ function MyComponent() {
 
     return (
         <div>
+            <h2>List of Food</h2>
+            <ul>
+                {foods.map((food, index) => <li key={index} onClick={() => handleRemoveFood(index)} >{food}</li>)}
+            </ul>
+            <input type="text" id="foodInput" placeholder='Enter food name' />
+            <button onClick={handleAddFood} >Add Food</button>
+
             <p>Your favourite car is: {car.year} {car.make} {car.model}</p>
 
             <input type="number" value={car.year} onChange={handleYearChange} /><br />
