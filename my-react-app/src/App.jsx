@@ -9,6 +9,7 @@ import ProfilePicture from "./ProfilePicture.jsx";
 import MyComponent from "./MyComponent.jsx";
 import Counter from "./Counter.jsx";
 import ColorPicker from "./ColorPicker.jsx";
+import ToDoList from "./ToDoList.jsx";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
     <>
       <UserGreeting isLoggedIn={true} />
       <Header />
+      <ToDoList />
       <ColorPicker />
       <MyComponent />
       <Counter />
