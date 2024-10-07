@@ -6,7 +6,7 @@ import Student from "./Student.jsx";
 import UserGreeting from "./UserGreeting.jsx";
 import List from "./List.jsx";
 import ProfilePicture from "./ProfilePicture.jsx";
-import MyComponent from "./MyComponent.jsx";
+import MyComponent2 from "./MyComponent2.jsx";
 import Counter from "./Counter.jsx";
 import ColorPicker from "./ColorPicker.jsx";
 import ToDoList from "./ToDoList.jsx";
@@ -34,7 +34,7 @@ function App() {
       <Header />
       <ToDoList />
       <ColorPicker />
-      <MyComponent />
+      <MyComponent2 />
       <Counter />
       {/* ternary conditional */}
       {fruits.length > 0 ? <List items={fruits} category='Fruits' /> : null}
