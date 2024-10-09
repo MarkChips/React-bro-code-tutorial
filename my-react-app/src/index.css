@@ -8,6 +8,11 @@ body {
   margin: 0;
 }
 
+.box {
+  border: 3px solid;
+  padding: 25px;
+}
+
 .clock-container {
   backdrop-filter: blur(5px);
   width: 100vw;

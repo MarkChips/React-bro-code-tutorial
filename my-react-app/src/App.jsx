@@ -11,6 +11,7 @@ import Counter from "./Counter.jsx";
 import ColorPicker from "./ColorPicker.jsx";
 import ToDoList from "./ToDoList.jsx";
 import DigitalClock from './DigitalClock.jsx';
+import ComponentA from "./ComponentA.jsx";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
     <>
       <UserGreeting isLoggedIn={true} />
       <Header />
+      <ComponentA />
       <DigitalClock />
       <ToDoList />
       <ColorPicker />
