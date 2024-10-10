@@ -6,7 +6,7 @@ import Student from "./Student.jsx";
 import UserGreeting from "./UserGreeting.jsx";
 import List from "./List.jsx";
 import ProfilePicture from "./ProfilePicture.jsx";
-import MyComponent3 from "./MyComponent3.jsx";
+import MyComponent4 from "./MyComponent4.jsx";
 import Counter from "./Counter.jsx";
 import ColorPicker from "./ColorPicker.jsx";
 import ToDoList from "./ToDoList.jsx";
@@ -38,7 +38,7 @@ function App() {
       <DigitalClock />
       <ToDoList />
       <ColorPicker />
-      <MyComponent3 />
+      <MyComponent4 />
       <Counter />
       {/* ternary conditional */}
       {fruits.length > 0 ? <List items={fruits} category='Fruits' /> : null}
