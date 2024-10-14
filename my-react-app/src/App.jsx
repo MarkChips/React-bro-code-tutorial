@@ -12,6 +12,7 @@ import ColorPicker from "./ColorPicker.jsx";
 import ToDoList from "./ToDoList.jsx";
 import DigitalClock from './DigitalClock.jsx';
 import ComponentA from "./ComponentA.jsx";
+import Stopwatch from "./Stopwatch.jsx";
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
       <Header />
       <ComponentA />
       <DigitalClock />
+      <Stopwatch />
       <ToDoList />
       <ColorPicker />
       <MyComponent4 />
